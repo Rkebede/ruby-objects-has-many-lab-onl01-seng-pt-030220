@@ -12,11 +12,11 @@ class Post
   def author=(author)
     @author = author
     author.posts << self 
-    @@all_posts << self
+    @@all << self
   end 
   
   def self.all_posts
-    @@all_posts
+    @@all
   end 
   
 end 
