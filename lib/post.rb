@@ -14,7 +14,7 @@ class Post
     author.posts << self 
   end 
   
-  def all_posts
+  def self.all_posts
     @@all_posts
   end 
   
