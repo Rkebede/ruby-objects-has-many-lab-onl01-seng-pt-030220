@@ -2,22 +2,23 @@ class Song
   
   attr_reader :artist, :name
   
-  @@all_songs = [ ]
+  @@all = [ ]
   
   def initialize(name) 
     @artist
     @name = name
+    @@all << self
   end 
   
   def artist=(artist)
     @artist = artist
     artist.songs << self 
-    @@all_songs << self
   end 
   
-  def self.all_songs
-    @@all_songs
+  def self.all
+    @@all
   end 
+  
     
   
   
