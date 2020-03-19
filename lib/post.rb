@@ -2,6 +2,8 @@ class Post
   
   attr_reader :title, :author
   
+  @@all_posts = [ ]
+  
   def initialize(title)
     @title = title
     @author
@@ -12,5 +14,8 @@ class Post
     author.posts << self 
   end 
   
+  def all_posts
+    @@all_posts
+  end 
   
 end 
