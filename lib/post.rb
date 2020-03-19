@@ -15,6 +15,10 @@ class Post
     author.posts << self 
   end 
   
+  def author_name
+    @author.name
+  end 
+  
   def self.all
     @@all
   end 
