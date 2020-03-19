@@ -15,6 +15,10 @@ class Song
     artist.songs << self 
   end 
   
+  def artist_name
+    @artist.name 
+  end
+  
   def self.all
     @@all
   end 
