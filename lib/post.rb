@@ -2,7 +2,7 @@ class Post
   
   attr_reader :title, :author
   
-  @@all_posts = [ ]
+  @@all = [ ]
   
   def initialize(title)
     @title = title
