@@ -16,8 +16,11 @@ class Post
   end 
   
   def author_name
-    if @author == name 
+    if @author
       @author.name
+    else 
+      nil 
+    end 
   end 
   
   def self.all
